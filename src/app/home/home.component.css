@@ -1,0 +1,14 @@
+.left-Widget {
+    height: 100%;
+}
+
+.left-Widget>img {
+    width: 100%;
+}
+
+.right-Widget {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 35px;
+}

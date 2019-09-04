@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.checked {
+    color: #FFDF00;
+}
+
+.content-wrap {
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #d2d1d1;
+}
+
+.content-text {
+    font-size: 14px;
+    font-family: inherit;
+    list-style: none;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid rgba(0, 0, 0, .1);
+}

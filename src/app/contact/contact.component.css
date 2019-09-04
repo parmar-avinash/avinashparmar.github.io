@@ -1,0 +1,31 @@
+.contact-img {
+    height: 300px;
+}
+
+.contactDetail {
+    float: left;
+}
+
+.col-md-6.googleMap.p-3 {
+    text-align: -webkit-center;
+}
+
+.socialMediaConnect {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.socialMediaConnect>li {
+    padding-left: 5px;
+}
+
+.socialMediaConnect>li>a>img {
+    height: 40px;
+    width: 35px;
+    margin: 0;
+}
+
+.socialMedia {
+    height: 40px;
+}

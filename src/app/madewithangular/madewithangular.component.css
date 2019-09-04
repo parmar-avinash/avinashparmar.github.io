@@ -1,0 +1,8 @@
+.content-wrap .content-img-wrap>img {
+    height: 50px;
+    width: 50px;
+}
+
+.apiData>p {
+    text-align: justify;
+}

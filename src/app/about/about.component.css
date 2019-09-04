@@ -1,0 +1,28 @@
+.abtMe-Wrap {
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #d2d1d1;
+}
+
+.abtMe-Wrap .col-md-4 {
+    text-align: justify;
+}
+
+.abtMe-Wrap .col-md-6 {
+    text-align: justify;
+}
+
+.abtMe-Wrap .col-md-3 {
+    text-align: justify;
+}
+
+.myImg {
+    text-align: center;
+}
+
+.myImg>img {
+    height: 195px;
+}
+
+h6.content-heading {
+    text-align: start;
+}

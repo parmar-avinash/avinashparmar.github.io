@@ -1,0 +1,114 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md col-lg m-2 p-2">
+            <div class="content-wrap p-3">
+                <div class="content-img-wrap">
+                    <img src="\assets\img\angular.svg" class="img-responsive">
+                </div>
+                <div class="content-desc-wrap">
+                    <p class="content-text">Below mentioned keywords are used in this widget </p>
+                    <h5 class="content-heading">HTTP, Rest API, Services, ngFor</h5>
+                    <div class="row" *ngIf="apiResponse">
+                        <div class="col-md-4 apiData" *ngFor="let data of apiResponse">
+
+                            <p class="content-text"> <b>Name</b>: {{data.name}}</p>
+
+                            <p class="content-text"> <b>Company</b>: {{data.company.name}}</p>
+
+                            <p class="content-text"> <b>City</b>: {{data.address.city}}</p>
+
+                            <p class="content-text"> <b>Phone Number</b>: {{data.phone}}</p>
+
+                            <p class="content-text"> <b>Email</b>: <a href="mailto:{{data.email}}">{{data.email}}</a></p>
+
+                            <p class="content-text"> <b>Website</b>:<a href="{{data.website}}"> {{data.website}}</a> </p>
+
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md col-lg m-2 p-2">
+            <div class="content-wrap p-3">
+                <div class="content-img-wrap">
+                    <img src="\assets\img\angular.svg" class="img-responsive">
+                </div>
+                <div class="content-desc-wrap" [ngStyle]="{'background-color':clickCounter > 5 ? 'yellow' : ''}">
+                    <h5 class="content-heading">ngIf, ngIfElse, ng-template, ngStyle</h5>
+                    <p class="content-text" id="demo">
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn-primary" (click)=counterFunction()> Click</button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <strong class="content-text">Counter: {{clickCounter}}</strong>
+                            <ng-template [ngIf]="clickCounter > 5" [ngIfElse]="ifCounterBlock">
+
+                                <p class="content-text">
+                                    counter is greater than 5                                                         </p>
+                            </ng-template>
+
+                            <ng-template #ifCounterBlock>
+
+                                <p class="content-text">
+                                    counter is less than 5
+                                </p>
+                            </ng-template>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md col-lg m-2 p-2">
+
+            <div class="content-wrap p-3">
+
+                <div class="content-img-wrap">
+                    <img src="\assets\img\angular.svg" class="img-responsive"> </div>
+                <h5 class="content-heading">Bootstrap Modal + Rest API Example</h5>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn-primary" data-toggle="modal" data-target="#myModal">Open modal </button>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Bootstrap Modal Heading</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6" *ngFor="let data of newResponse">
+                                        <p class="content-text"> <b>Author</b>: {{data.author}}</p>
+                                        <img src={{data.download_url}} class="img-responsive" style="height: 200px; width: 200px;">
+                                        <hr>
+                                        <hr>                                                                         </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+.myWork-content-wrap {
+    box-shadow: 1px 1px 5px 1px #d2d1d1;
+}
+
+.myWork-content-wrap .content-img-wrap>img {
+    height: 50px;
+    width: 50px;
+}
+
+.content-text>ul {
+    padding: 0;
+}
+
+ul.content-text {
+    padding: 0;
+}
+
+.content-text>ul>li {
+    font-size: small;
+    font-family: inherit;
+    padding: 0;
+}
+
+.myWork-content-wrap.p-3 {
+    min-height: 310px;
+}
+
+#todolistDesc {
+    margin-bottom: 0;
+}
+
+.content-img-wrap-upcoming>img {
+    height: 310px;
+    width: 100%;
+}
